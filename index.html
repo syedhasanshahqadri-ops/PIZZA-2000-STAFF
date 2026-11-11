@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pizza 2000 Staff Panel</title><link rel="icon" href="assets/shs-logo.png"><meta name="robots" content="noindex">
+<meta name="description" content="Live order management for the Pizza 2000 team.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pizza 2000">
+<meta property="og:title" content="Pizza 2000 Staff Panel">
+<meta property="og:description" content="Live order management for the Pizza 2000 team.">
+<meta property="og:url" content="https://p90867829-boop.github.io/pizza-2000-staff/">
+<meta property="og:image" content="https://p90867829-boop.github.io/pizza-2000-staff/assets/og-staff.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pizza 2000 logo with the text Staff Panel">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pizza 2000 Staff Panel">
+<meta name="twitter:description" content="Live order management for the Pizza 2000 team.">
+<meta name="twitter:image" content="https://p90867829-boop.github.io/pizza-2000-staff/assets/og-staff.png">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.dataset.theme=localStorage.getItem('p2k-theme')||'light'</script>
+<style>.logo{height:40px;width:auto;display:block;overflow:visible}.lg{font:400 44px Anton,Impact,sans-serif;fill:#DC2626;stroke:#fff;stroke-width:5;stroke-linejoin:round;paint-order:stroke;letter-spacing:1px}.lg.s{fill:#7F1D1D;stroke:#7F1D1D}.lg2{font:400 14px Anton,sans-serif;fill:#fff;letter-spacing:6px}header{background:#150606}header h1{color:#FDBA74}@media(max-width:560px){main{padding:16px 4vw}.list{grid-template-columns:1fr!important}}
+:root{--bg:#FFF7ED;--card:#fff;--ink:#3a0d0d;--mut:#7a4a3a;--pri:#DC2626;--deep:#7F1D1D;--acc:#F97316;--line:#f1cfae}
+[data-theme=dark]{--bg:#170707;--card:#2b1010;--ink:#FFF7ED;--mut:#FDBA74;--line:#4a1f1a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 'DM Sans',sans-serif}
+header{display:flex;align-items:center;gap:14px;padding:10px 5vw;border-bottom:1px solid var(--line);flex-wrap:wrap}header img{height:42px;background:#fff;border-radius:8px;padding:2px}
+h1{font:400 1.6rem Anton,sans-serif;margin:0;color:var(--pri)}.sp{margin-left:auto}
+button{font:inherit;font-weight:700;border:0;border-radius:99px;padding:8px 16px;cursor:pointer;background:var(--pri);color:#fff}button.g{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+main{padding:20px 5vw;max-width:1200px;margin:auto}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+input{font:inherit;width:100%;padding:10px 12px;margin:6px 0 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink)}
+#login{max-width:380px;margin:12vh auto}.err{color:var(--pri);font-weight:700}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}.stats div{flex:1;min-width:140px}.stats b{display:block;font:400 2rem Anton,sans-serif;color:var(--pri)}
+.f{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}.f button[aria-pressed=true]{background:var(--pri);color:#fff}.f button{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.list{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr))}.o h3{margin:0;display:flex;justify-content:space-between}
+.tag{font-size:.8rem;padding:2px 10px;border-radius:99px;background:var(--acc);color:#fff}.o ul{padding-left:18px;margin:8px 0}.o .a{display:flex;gap:6px;flex-wrap:wrap}.m{color:var(--mut);font-size:.9rem}
+footer{display:flex;gap:8px;align-items:center;justify-content:center;padding:18px;color:var(--mut)}footer img{width:24px;border-radius:6px}
+button{height:40px;border-radius:10px;padding:0 16px;border:1px solid transparent;transition:background .15s,transform .1s,border-color .15s}button:hover{background:#B91C1C}button:active{transform:scale(.96)}button.g:hover,.f button:hover{background:transparent;border-color:var(--acc);color:var(--pri)}.f button[aria-pressed=true]:hover{background:#B91C1C;color:#fff}
+.card{border-radius:14px;transition:transform .2s,box-shadow .2s,border-color .2s}.o:hover{transform:translateY(-3px);border-color:var(--acc);box-shadow:0 14px 30px -12px rgba(127,29,29,.4)}input:focus{outline:0;border-color:var(--acc);box-shadow:0 0 0 3px rgba(249,115,22,.3)}.tag{font-weight:700}</style></head><body>
+<header><svg class="logo" viewBox="0 0 190 66" role="img" aria-label="Pizza 2000"><text x="96.5" y="40" text-anchor="middle" class="lg s">PIZZA</text><text x="95" y="38" text-anchor="middle" class="lg">PIZZA</text><rect x="48" y="46" width="94" height="17" rx="3" fill="#7F1D1D" stroke="#fff" stroke-width="1.5"/><text x="95" y="59" text-anchor="middle" class="lg2">2000</text></svg><h1>Staff panel</h1><span class="sp"></span><button class="g" id="th">Dark</button><button class="g" id="out" hidden>Sign out</button></header>
+<main>
+<form id="login" class="card"><h1>Staff sign in</h1><label>Email<input id="em" type="email" required></label><label>Password<input id="pw" type="password" required></label><button>Sign in</button><p id="err" class="err"></p></form>
+<section id="app" hidden>
+<div class="stats"><div class="card"><span class="m">New</span><b id="sN">0</b></div><div class="card"><span class="m">Preparing</span><b id="sP">0</b></div><div class="card"><span class="m">Out for delivery</span><b id="sD">0</b></div><div class="card"><span class="m">Sales today (delivered)</span><b id="sS">0</b></div></div>
+<div class="f" id="f"></div><div class="list" id="list"></div></section></main>
+<footer><img src="assets/shs-logo.png" alt="SHS logo">Developed by SYED HASAN SHAH</footer>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),rs=n=>'Rs. '+(+n).toLocaleString('en-PK');
+const map=o=>o.location?`https://www.google.com/maps?q=${+o.location.lat},${+o.location.lng}`:`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(o.address||'')}`;const ST=['New','Preparing','Out for delivery','Delivered','Cancelled'];let orders=[],flt='All',unsub;
+const th=$('#th'),sy=()=>th.textContent=document.documentElement.dataset.theme==='dark'?'Light':'Dark';sy();
+th.onclick=()=>{const t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;localStorage.setItem('p2k-theme',t);sy()};
+if(!FB_CONFIG.projectId){$('#err').textContent='Add your Firebase config in firebase-config.js first.'}else{
+firebase.initializeApp(FB_CONFIG);const auth=firebase.auth(),db=firebase.firestore();
+$('#login').onsubmit=e=>{e.preventDefault();auth.signInWithEmailAndPassword($('#em').value,$('#pw').value).catch(x=>$('#err').textContent='Sign in failed. Check email and password.')};
+$('#out').onclick=()=>auth.signOut();
+auth.onAuthStateChanged(u=>{$('#login').hidden=!!u;$('#app').hidden=!u;$('#out').hidden=!u;unsub&&unsub();if(u)unsub=db.collection('orders').orderBy('createdAt','desc').onSnapshot(s=>{orders=s.docs.map(d=>d.data());draw()},x=>$('#list').textContent='Cannot read orders: '+x.message)});
+$('#list').onclick=e=>{const b=e.target.closest('[data-s]');if(b)db.collection('orders').doc(b.dataset.id).update({status:b.dataset.s})}}
+$('#f').onclick=e=>{if(e.target.dataset.f){flt=e.target.dataset.f;draw()}};
+function draw(){const c=s=>orders.filter(o=>o.status===s).length,today=new Date().toDateString();
+$('#sN').textContent=c('New');$('#sP').textContent=c('Preparing');$('#sD').textContent=c('Out for delivery');
+$('#sS').textContent=rs(orders.filter(o=>o.status==='Delivered'&&o.createdAt&&o.createdAt.toDate().toDateString()===today).reduce((a,o)=>a+o.total,0));
+$('#f').innerHTML=['All',...ST].map(s=>`<button data-f="${s}" aria-pressed="${s===flt}">${s}</button>`).join('');
+const L=orders.filter(o=>flt==='All'||o.status===flt);
+$('#list').innerHTML=L.length?L.map(o=>`<article class="card o"><h3>${esc(o.id)}<span class="tag">${esc(o.status)}</span></h3><div class="m">${o.createdAt?o.createdAt.toDate().toLocaleString():''}</div><p><b>${esc(o.name)}</b><br><a href="tel:${esc(o.phone)}">${esc(o.phone)}</a><br>${esc(o.address)}<br><a target="_blank" rel="noopener" href="${esc(map(o))}">Open in Google Maps</a>${o.location?` <span class="m">(live GPS pin${o.location.accuracy?', about '+esc(o.location.accuracy)+' m':''})</span>`:''}</p><ul>${o.items.map(i=>`<li>${i.q} x ${esc(i.n)} (${esc(i.o)})</li>`).join('')}</ul><p class="m">Subtotal ${rs(o.subtotal)} + delivery ${rs(o.delivery)}</p><p><b>Total ${rs(o.total)}</b><br><span class="m">${esc(o.payment)} / Txn ${esc(o.txn)}</span></p><div class="a">${ST.filter(s=>s!==o.status).map(s=>`<button class="${s==='Cancelled'?'g':''}" data-id="${esc(o.id)}" data-s="${s}">${s}</button>`).join('')}</div></article>`).join(''):'<p class="m">No orders here yet.</p>'}
+</script></body></html>
